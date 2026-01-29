@@ -19,8 +19,8 @@ export default async function handler(req, res) {
     await resend.emails.send({
       from: process.env.MAIL_FROM,
       to: [email],
-      subject: "Valentine Confirmation 💘",
-      html: "<p>Attached is your confirmation 💖</p>",
+      subject: "POTWIERDZENIE WALENTYNKOWE 💘",
+      html: "<p>W załączniku jest potwierdzenie 💖</p>",
       attachments: [
         { filename: "confirmation.pdf", content: pdf.toString("base64") }
       ]
