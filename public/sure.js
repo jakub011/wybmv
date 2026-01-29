@@ -11,7 +11,7 @@ form.addEventListener("submit", async (e) => {
   const email = new FormData(form).get("email")?.toString().trim();
   if (!email) return;
 
-  setStatus("Sending your confirmation letter…");
+  setStatus("Wysylanie super emaila :)");
 
   try {
     // You will implement this endpoint on your hosting platform
