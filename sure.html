@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jesteś pewna?</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Czy jesteś pewna? 😳</h1>
+    <p class="sub">Wpisz swój adres email aby otrzymać potwierdzenie 📄</p>
+
+    <form id="form" class="form">
+      <label class="label" for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        class="input"
+        type="email"
+        autocomplete="email"
+        placeholder="twuj adres imejl"
+        required
+      />
+
+      <button class="btn btnYes" type="submit">TAK (ostatecznie)</button>
+      <a class="btn btnNo" href="./index.html">NIE (powrót)</a>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="./hearts.js"></script>
+  <script src="./sure.js"></script>
+</body>
+</html>
